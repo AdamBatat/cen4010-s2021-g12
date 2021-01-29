@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Adam Batat Resume</title>
+        <link rel="stylesheet" href="mycss.css">
+    </head>
+    <body>
+        <header><hr>
+        <h1>My Resume</h1>
+        <hr></header>
+        <img src="mypicture.JPG">
+        <h2>Education</h2>
+        <ul>
+            <li>AA, University of South Florida 2020</li>
+            <li> <span style="color:blue">Bachelor's, Florida Atlantic University 2021, Computer Science</span></li>
+        </ul>
+        <h2>Professional Experience</h2>
+        <table>
+            
+        <tr>
+            <th>Company</th>
+            <th>Years</th>
+            <th>Job Description</th>
+            </tr>
+        <tr>
+            <td>Publix Super Markets</td>
+            <td>2014-Current</td>
+            <td>
+                <ul>
+                    <li>Data entry and adjustments for inventory with Chain Track</li>
+                    <li>Ensuring premier, quality customer service</li>
+                    <li>Ordering supplies for day-to-day needs</li>
+                </ul>
+                </td>
+            </tr>
+        </table>
+      
+        <div class="hardskills">
+                <h2>Hard Skills</h2>
+                <p>C, C++, Java, HTML & CSS, Javascript </p>
+        </div>
+        
+        <div class="softskills">
+                 <h2>Soft Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Adaptablility</li>
+                    <li>Strong Work Ethic</li>
+                    <li>Quick Learner</li>
+                    <li>Problem Solving</li>
+                    <li>Team Work</li>
+                    <li>Self Managment</li>
+                </ul>
+            </div>
+        <h2>Interests<img src="circuit.jpg" style= "height:25px"></h2>
+        <ul>
+            <li>Fitness</li>
+             <li>Embedded Systems</li>
+            <li>Programming</li>
+            <li>Traveling</li>
+        </ul>
+        
+        <footer>
+            <h2>External Links</h2>
+            <a href="https://fau.joinhandshake.com/users/24216893">Handshake</a>
+            <a href="https://github.com/adamb750">Github</a>
+            <a href="https://www.coursera.org/user/df1f533806034a37af84e53cad8b1918r">Coursera</a>
+        </footer>
+    </body>
+</html>
