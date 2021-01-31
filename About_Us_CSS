@@ -1,8 +1,0 @@
-.middle{
-    text-align: center;
-}
-.pictures{  
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
