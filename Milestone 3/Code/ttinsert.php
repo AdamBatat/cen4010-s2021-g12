@@ -8,8 +8,8 @@ if(isset($_POST["first_name"]))
  for($count = 0; $count < count($_POST["first_name"]); $count++)
  {  
   $query = "INSERT INTO users 
-  (order_id, first_name, last_name, email) 
-  VALUES (:order_id, :first_name, :last_name, :email)
+  (order_id, first_name, last_name, email, password) 
+  VALUES (:order_id, :first_name, :last_name, :email, :password)
   ";
   $statement = $connect->prepare($query);
   $statement->execute(
@@ -18,6 +18,7 @@ if(isset($_POST["first_name"]))
     ':first_name'  => $_POST["first_name"][$count], 
     ':last_name' => $_POST["last_name"][$count], 
     ':email'  => $_POST["email"][$count],
+    ':password'  => $_POST["password"][$count],
 
    )
   );

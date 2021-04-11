@@ -47,11 +47,13 @@
                                             <th>First Name</th>
                                             <th>Last Name</th>
                                             <th>Email</th>
+                                                <th>Password</th>     
                                         </tr>
                                         <tr>
                                             <td><input type="text" name="first_name[]" class="form-control" /></td>
                                             <td><input type="text" name="last_name[]" class="form-control" /></td>
                                             <td><input type="text" name="email[]" class="form-control" /></td>
+                                            <td><input type="text" name="password[]" class="form-control" /></td>  
                                         </tr>
                                     </table>
                                     <div align="center">
@@ -88,6 +90,7 @@
             html += '<td><input type="text" name="first_name[]" class="form-control" /></td>';
             html += '<td><input type="text" name="last_name[]" class="form-control" /></td>';
             html += '<td><input type="text" name="email[]" class="form-control" /></td>';
+            html += '<td><input type="text" name="password[]" class="form-control" /></td>';
             $('#item_table').append(html);
         });
 
@@ -122,6 +125,14 @@
                 var count = 1;
                 if ($(this).val() == '') {
                     error += "<p>Enter Email " + count + " Row</p>";
+                    return false;
+                }
+                count = count + 1;
+            });
+            $('.password').each(function() {
+                var count = 1;
+                if ($(this).val() == '') {
+                    error += "<p>Enter Password " + count + " Row</p>";
                     return false;
                 }
                 count = count + 1;
